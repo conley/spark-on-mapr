@@ -1,6 +1,8 @@
 #!/bin/bash
 
-wget http://spark-project.org/download/spark-0.8.0-incubating.tgz
+if [ ! -f spark-0.8.0-incubating.tgz ]; then
+	wget http://spark-project.org/download/spark-0.8.0-incubating.tgz
+fi
 tar -xzf spark-0.8.0-incubating.tgz
 cd spark-0.8.0-incubating
 
