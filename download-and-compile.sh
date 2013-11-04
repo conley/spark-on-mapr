@@ -12,7 +12,7 @@ sed -i.bak \
   -e '/val excludeNetty = ExclusionRule(organization = "org.jboss.netty")/i \
   val excludeMapRNetty = ExclusionRule(name = "netty")' \
   -e '/val excludeNetty = ExclusionRule(organization = "org.jboss.netty")/i \
-  val excluedeMapRS3 = ExclusionRule(name = "s3filesystem")' \
+  val excludeMapRS3 = ExclusionRule(name = "s3filesystem")' \
   -e '/"org.apache.hadoop" % "hadoop-client" % hadoopVersion excludeAll(excludeJackson, excludeNetty, excludeAsm),/i \
       "com.mapr.hadoop" % "maprfs" % "1.0.3-mapr-3.0.1" excludeAll(excludeMapRNetty, excludeMapRS3),' \
   -e '/"org.apache.hadoop" % "hadoop-client" % hadoopVersion excludeAll(excludeJackson, excludeNetty, excludeAsm),/c \
